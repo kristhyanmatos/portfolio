@@ -28,7 +28,9 @@ class ProjectsWidget extends StatelessWidget {
             'assets/projects/datalise_3.svg',
           ],
         ),
-        SizedBox(height: 32),
+        SizedBox(height: 24),
+        Divider(),
+        SizedBox(height: 24),
         ProjectWidget(
           title: 'Leva Almondes',
           subtitle:

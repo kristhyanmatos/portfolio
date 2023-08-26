@@ -20,45 +20,38 @@ class ProjectWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Flexible(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                title,
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-              Text(
-                subtitle,
-                style: Theme.of(context).textTheme.bodyLarge,
-                textAlign: TextAlign.justify,
-              ),
-              SizedBox(
-                height: 60,
-                child: ListView.separated(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  itemCount: urlsIcons.length,
-                  itemBuilder: (context, index) => SvgPicture.asset(
-                    urlsIcons[index],
-                    height: 30,
-                  ),
-                  separatorBuilder: (context, index) =>
-                      const SizedBox(width: 12),
-                ),
-              ),
-              Text(
-                develop,
-                style: Theme.of(context).textTheme.bodyMedium,
-                textAlign: TextAlign.justify,
-              ),
-            ],
+        Text(
+          title,
+          style: Theme.of(context).textTheme.titleLarge,
+        ),
+        Text(
+          subtitle,
+          style: Theme.of(context).textTheme.bodyLarge,
+          textAlign: TextAlign.justify,
+        ),
+        const SizedBox(height: 16),
+        CarrosselWidget(urlsImages: urlsImages),
+        SizedBox(
+          height: 60,
+          child: ListView.separated(
+            shrinkWrap: true,
+            scrollDirection: Axis.horizontal,
+            itemCount: urlsIcons.length,
+            itemBuilder: (context, index) => SvgPicture.asset(
+              urlsIcons[index],
+              height: 30,
+            ),
+            separatorBuilder: (context, index) => const SizedBox(width: 12),
           ),
         ),
-        CarrosselWidget(urlsImages: urlsImages)
+        Text(
+          develop,
+          style: Theme.of(context).textTheme.bodyMedium,
+          textAlign: TextAlign.justify,
+        ),
       ],
     );
   }

@@ -26,7 +26,6 @@ class ExperiencesWidget extends StatelessWidget {
             fim: '',
             develop:
                 'Competências: Next.js · Server-Drive UI · Liderança · Arquitetura de software · Flutter · Python · TypeScript',
-            urlLogoEmpresa: 'assets/experiences/datalise.svg',
           ),
           SizedBox(height: 32),
           ExperienceWidget(
@@ -37,7 +36,6 @@ class ExperiencesWidget extends StatelessWidget {
             fim: 'Agosto de 2021 | 1 ano e 1 mês',
             develop:
                 'Competências: SOLID · Clean Code · PostgreSQL · Python · Vue · TypeScript',
-            urlLogoEmpresa: 'assets/experiences/logo-bitsjr.svg',
           ),
           SizedBox(height: 24),
           Divider(),
@@ -56,7 +54,6 @@ class ExperiencesWidget extends StatelessWidget {
             fim: 'Julho de 2020 | 1 ano e 5 meses',
             develop:
                 'Competências: Scrum · XP · Raspberry Pi · PostgreSQL · SQLite · Dashboards · Python · Java',
-            urlLogoEmpresa: 'assets/experiences/datalise.svg',
           ),
           SizedBox(height: 64),
         ],

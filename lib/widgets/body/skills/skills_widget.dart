@@ -7,10 +7,9 @@ class SkillsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Wrap(
-      spacing: 32,
-      runSpacing: 32,
-      children: [
+    return ListView(
+      shrinkWrap: true,
+      children: const [
         SkillWidget(
           title: 'Competências',
           list: [
@@ -21,6 +20,9 @@ class SkillsWidget extends StatelessWidget {
             'Resolução de problemas',
           ],
         ),
+        SizedBox(height: 16),
+        Divider(),
+        SizedBox(height: 16),
         SkillWidget(
           title: 'Ferramentas',
           list: [
@@ -35,6 +37,9 @@ class SkillsWidget extends StatelessWidget {
             'Figma',
           ],
         ),
+        SizedBox(height: 16),
+        Divider(),
+        SizedBox(height: 16),
         SkillWidget(
           title: 'Idiomas',
           list: ['Português / Avançado', 'Inglês / Intermediário'],
