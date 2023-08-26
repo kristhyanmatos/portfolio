@@ -7,10 +7,8 @@ class ProjectsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      shrinkWrap: true,
-      physics: const AlwaysScrollableScrollPhysics(),
-      children: const [
+    return const Column(
+      children: [
         ProjectWidget(
           title: 'Datalise App',
           subtitle:

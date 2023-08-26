@@ -39,6 +39,7 @@ class _MobileLayoutState extends State<MobileLayout> {
                 height: MediaQuery.of(context).size.height - 115,
                 child: ListView(
                   shrinkWrap: true,
+                  physics: const AlwaysScrollableScrollPhysics(),
                   children: [
                     if (index == 0) const AboutWidget(),
                     if (index == 1) const ExperiencesWidget(),

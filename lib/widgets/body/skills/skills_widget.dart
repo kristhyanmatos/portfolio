@@ -7,9 +7,9 @@ class SkillsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      shrinkWrap: true,
-      children: const [
+    return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
         SkillWidget(
           title: 'Competências',
           list: [

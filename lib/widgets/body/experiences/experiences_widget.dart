@@ -10,9 +10,8 @@ class ExperiencesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.02),
-      child: ListView(
-        shrinkWrap: true,
-        children: const [
+      child: const Column(
+        children: [
           CompanyWidget(
             name: 'Datalise Tecnologia da Informação LTDA',
             logo: 'assets/experiences/datalise.svg',
