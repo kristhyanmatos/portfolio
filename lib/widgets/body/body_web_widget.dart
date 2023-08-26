@@ -5,14 +5,14 @@ import 'experiences/experiences_widget.dart';
 import 'projects/projects_widget.dart';
 import 'skills/skills_widget.dart';
 
-class BodyWidget extends StatefulWidget {
-  const BodyWidget({super.key});
+class BodyWebWidget extends StatefulWidget {
+  const BodyWebWidget({super.key});
 
   @override
-  State<BodyWidget> createState() => _BodyWidgetState();
+  State<BodyWebWidget> createState() => _BodyWebWidgetState();
 }
 
-class _BodyWidgetState extends State<BodyWidget> {
+class _BodyWebWidgetState extends State<BodyWebWidget> {
   int index = 2;
   @override
   Widget build(BuildContext context) {
