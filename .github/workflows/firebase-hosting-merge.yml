@@ -53,3 +53,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_KIRSTHYAN }}'
           channelId: live
           projectId: portfolio-kirsthyan
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
