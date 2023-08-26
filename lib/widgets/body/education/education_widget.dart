@@ -28,7 +28,7 @@ class EducationWidget extends StatelessWidget {
             SizedBox(
               height: 80,
               width: 120,
-              child: SvgPicture.asset('unifesspa.svg'),
+              child: SvgPicture.asset('assets/unifesspa.svg'),
             ),
           ],
         ),

@@ -48,17 +48,17 @@ class AboutWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgPicture.asset(
-                'icons/github.svg',
+                'assets/icons/github.svg',
                 semanticsLabel: 'GitHub',
               ),
               const SizedBox(width: 12),
               SvgPicture.asset(
-                'icons/whatsapp.svg',
+                'assets/icons/whatsapp.svg',
                 semanticsLabel: 'WhatsApp',
               ),
               const SizedBox(width: 12),
               SvgPicture.asset(
-                'icons/linkedin.svg',
+                'assets/icons/linkedin.svg',
                 semanticsLabel: 'Linkedin',
               ),
             ],

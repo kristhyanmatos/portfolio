@@ -24,5 +24,9 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/noise.png
+    - assets/unifesspa.svg
+    - assets/experiences/
+    - assets/icons/
+    - assets/projects/
 

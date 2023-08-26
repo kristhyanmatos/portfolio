@@ -26,7 +26,7 @@ class ExperiencesWidget extends StatelessWidget {
             fim: '',
             develop:
                 'Competências: Next.js · Server-Drive UI · Liderança · Arquitetura de software · Flutter · Python · TypeScript',
-            urlLogoEmpresa: 'experiences/datalise.svg',
+            urlLogoEmpresa: 'assets/experiences/datalise.svg',
           ),
           SizedBox(height: 32),
           ExperienceWidget(
@@ -37,14 +37,14 @@ class ExperiencesWidget extends StatelessWidget {
             fim: 'Agosto de 2021 | 1 ano e 1 mês',
             develop:
                 'Competências: SOLID · Clean Code · PostgreSQL · Python · Vue · TypeScript',
-            urlLogoEmpresa: 'experiences/logo-bitsjr.svg',
+            urlLogoEmpresa: 'assets/experiences/logo-bitsjr.svg',
           ),
           SizedBox(height: 24),
           Divider(),
           SizedBox(height: 24),
           CompanyWidget(
             name: 'Bits Jr - Soluções em TI',
-            logo: 'experiences/logo-bitsjr.svg',
+            logo: 'assets/experiences/logo-bitsjr.svg',
             height: 40,
           ),
           SizedBox(height: 32),
@@ -56,7 +56,7 @@ class ExperiencesWidget extends StatelessWidget {
             fim: 'Julho de 2020 | 1 ano e 5 meses',
             develop:
                 'Competências: Scrum · XP · Raspberry Pi · PostgreSQL · SQLite · Dashboards · Python · Java',
-            urlLogoEmpresa: 'experiences/datalise.svg',
+            urlLogoEmpresa: 'assets/experiences/datalise.svg',
           ),
           SizedBox(height: 64),
         ],
