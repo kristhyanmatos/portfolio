@@ -26,7 +26,6 @@ class ExperiencesWidget extends StatelessWidget {
             fim: '',
             develop:
                 'Competências: Next.js · Server-Drive UI · Liderança · Arquitetura de software · Flutter · Python · TypeScript',
-            urlLogoEmpresa: 'assets/experiences/datalise.svg',
           ),
           SizedBox(height: 32),
           ExperienceWidget(
@@ -34,10 +33,9 @@ class ExperiencesWidget extends StatelessWidget {
             subtitle:
                 'Desenvolvedor Full Stack, realizando junto a equipe um Sistema Web para gestão financeira de concessionárias. Tendo em vista, o mapeamento adequado de contas de entradas e saídas, exportação de relatórios para as montadoras, manutenção de contas lançadas de forma errônea.',
             inicio: 'Agosto de 2020',
-            fim: 'Agosto de 2021 | 1 ano e 1 mês',
+            fim: '- Agosto de 2021 | 1 ano e 1 mês',
             develop:
                 'Competências: SOLID · Clean Code · PostgreSQL · Python · Vue · TypeScript',
-            urlLogoEmpresa: 'assets/experiences/logo-bitsjr.svg',
           ),
           SizedBox(height: 24),
           Divider(),
@@ -53,10 +51,9 @@ class ExperiencesWidget extends StatelessWidget {
             subtitle:
                 'Desenvolvedor Full Stack de sistemas Desktop em formato dashboard. Fazendo uso da gestão de projetos (SCRUM e XP). \n- Desenvolvi um sistema de controle de venda e estoque: "GERÊNCIA AMAZÔNIA" em Java Desktop Full State;\n- Desenvolvi um sistema capaz de monitorar o nível diurético de pacientes na UTI.',
             inicio: 'Março de 2019',
-            fim: 'Julho de 2020 | 1 ano e 5 meses',
+            fim: '- Julho de 2020 | 1 ano e 5 meses',
             develop:
                 'Competências: Scrum · XP · Raspberry Pi · PostgreSQL · SQLite · Dashboards · Python · Java',
-            urlLogoEmpresa: 'assets/experiences/datalise.svg',
           ),
           SizedBox(height: 64),
         ],

@@ -8,32 +8,29 @@ class CarrosselWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 400,
-      child: CarouselSlider(
-        options: CarouselOptions(
-          height: 400,
-          autoPlay: true,
-          aspectRatio: 16 / 9,
-          autoPlayInterval: const Duration(seconds: 4),
-          autoPlayAnimationDuration: const Duration(milliseconds: 1000),
-        ),
-        items: urlsImages.map((item) {
-          return Builder(
-            builder: (BuildContext context) {
-              return InkWell(
-                onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (context) => SvgPicture.asset(item),
-                  );
-                },
-                child: SvgPicture.asset(item),
-              );
-            },
-          );
-        }).toList(),
+    return CarouselSlider(
+      options: CarouselOptions(
+        height: 400,
+        autoPlay: true,
+        aspectRatio: 16 / 9,
+        autoPlayInterval: const Duration(seconds: 4),
+        autoPlayAnimationDuration: const Duration(milliseconds: 1000),
       ),
+      items: urlsImages.map((item) {
+        return Builder(
+          builder: (BuildContext context) {
+            return InkWell(
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (context) => SvgPicture.asset(item),
+                );
+              },
+              child: SvgPicture.asset(item),
+            );
+          },
+        );
+      }).toList(),
     );
   }
 }

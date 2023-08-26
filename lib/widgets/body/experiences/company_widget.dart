@@ -17,9 +17,11 @@ class CompanyWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          name,
-          style: Theme.of(context).textTheme.titleLarge,
+        Flexible(
+          child: Text(
+            name,
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
         ),
         SizedBox(
           height: height,

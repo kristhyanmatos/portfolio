@@ -5,14 +5,14 @@ import 'experiences/experiences_widget.dart';
 import 'projects/projects_widget.dart';
 import 'skills/skills_widget.dart';
 
-class BodyWidget extends StatefulWidget {
-  const BodyWidget({super.key});
+class BodyWebWidget extends StatefulWidget {
+  const BodyWebWidget({super.key});
 
   @override
-  State<BodyWidget> createState() => _BodyWidgetState();
+  State<BodyWebWidget> createState() => _BodyWebWidgetState();
 }
 
-class _BodyWidgetState extends State<BodyWidget> {
+class _BodyWebWidgetState extends State<BodyWebWidget> {
   int index = 0;
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class _BodyWidgetState extends State<BodyWidget> {
           Row(
             children: [
               ChoiceChip(
-                label: const Text('Projetos'),
+                label: const Text('Experiências'),
                 selected: index == 0,
                 onSelected: (value) => setState(() {
                   index = 0;
@@ -32,7 +32,7 @@ class _BodyWidgetState extends State<BodyWidget> {
               ),
               const SizedBox(width: 12),
               ChoiceChip(
-                label: const Text('Experiências'),
+                label: const Text('Projetos'),
                 selected: index == 1,
                 onSelected: (value) => setState(() {
                   index = 1;
@@ -62,8 +62,8 @@ class _BodyWidgetState extends State<BodyWidget> {
             child: ListView(
               shrinkWrap: true,
               children: [
-                if (index == 0) const ProjectsWidget(),
-                if (index == 1) const ExperiencesWidget(),
+                if (index == 0) const ExperiencesWidget(),
+                if (index == 1) const ProjectsWidget(),
                 if (index == 2) const SkillsWidget(),
                 if (index == 3) const EducationWidget(),
               ],

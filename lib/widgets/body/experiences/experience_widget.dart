@@ -6,7 +6,6 @@ class ExperienceWidget extends StatelessWidget {
   final String inicio;
   final String fim;
   final String develop;
-  final String urlLogoEmpresa;
   const ExperienceWidget({
     super.key,
     required this.title,
@@ -14,7 +13,6 @@ class ExperienceWidget extends StatelessWidget {
     required this.inicio,
     required this.fim,
     required this.develop,
-    required this.urlLogoEmpresa,
   });
 
   @override
@@ -35,7 +33,7 @@ class ExperienceWidget extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         Text(
-          '$inicio - $fim',
+          '$inicio $fim',
           style: Theme.of(context).textTheme.bodyMedium,
           textAlign: TextAlign.justify,
         ),

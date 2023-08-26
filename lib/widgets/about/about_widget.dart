@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'dart:js' as js;
 import 'profile_photo_widget.dart';
 
 class AboutWidget extends StatelessWidget {
@@ -47,19 +47,37 @@ class AboutWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SvgPicture.asset(
-                'assets/icons/github.svg',
-                semanticsLabel: 'GitHub',
+              InkWell(
+                onTap: () => js.context.callMethod(
+                  'open',
+                  ['https://github.com/kristhyanmatos'],
+                ),
+                child: SvgPicture.asset(
+                  'assets/icons/github.svg',
+                  semanticsLabel: 'GitHub',
+                ),
               ),
               const SizedBox(width: 12),
-              SvgPicture.asset(
-                'assets/icons/whatsapp.svg',
-                semanticsLabel: 'WhatsApp',
+              InkWell(
+                onTap: () => js.context.callMethod(
+                  'open',
+                  ['https://api.whatsapp.com/send?phone=5591985398664'],
+                ),
+                child: SvgPicture.asset(
+                  'assets/icons/whatsapp.svg',
+                  semanticsLabel: 'WhatsApp',
+                ),
               ),
               const SizedBox(width: 12),
-              SvgPicture.asset(
-                'assets/icons/linkedin.svg',
-                semanticsLabel: 'Linkedin',
+              InkWell(
+                onTap: () => js.context.callMethod(
+                  'open',
+                  ['https://www.linkedin.com/in/kristhyan-de-matos-maia/'],
+                ),
+                child: SvgPicture.asset(
+                  'assets/icons/linkedin.svg',
+                  semanticsLabel: 'Linkedin',
+                ),
               ),
             ],
           ),

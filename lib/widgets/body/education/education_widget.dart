@@ -9,36 +9,27 @@ class EducationWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Engenheiro da Computação',
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
-                Text(
-                  'Bacharelado',
-                  style: Theme.of(context).textTheme.titleMedium,
-                ),
-              ],
-            ),
-            SizedBox(width: MediaQuery.of(context).size.width * 0.12),
-            SizedBox(
-              height: 80,
-              width: 120,
-              child: SvgPicture.asset('assets/unifesspa.svg'),
-            ),
-          ],
+        Text(
+          'Engenheiro da Computação',
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         Text(
-          'Universidade do Sul e Sudeste do Pará - UNIFESSPA',
+          'Bacharelado',
           style: Theme.of(context).textTheme.bodyLarge,
         ),
         Text(
           '2022',
-          style: Theme.of(context).textTheme.bodyMedium,
+          style: Theme.of(context).textTheme.titleMedium,
+        ),
+        const SizedBox(height: 16),
+        Text(
+          'Universidade do Sul e Sudeste do Pará - UNIFESSPA',
+          style: Theme.of(context).textTheme.bodyLarge,
+        ),
+        SizedBox(
+          height: 60,
+          width: 120,
+          child: SvgPicture.asset('assets/unifesspa.svg'),
         ),
       ],
     );

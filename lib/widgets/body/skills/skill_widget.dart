@@ -7,23 +7,20 @@ class SkillWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.25,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(title, style: Theme.of(context).textTheme.titleLarge),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: list
-                .map((item) => Text(
-                      item,
-                      style: Theme.of(context).textTheme.bodyLarge,
-                    ))
-                .toList(),
-          ),
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(title, style: Theme.of(context).textTheme.titleLarge),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: list
+              .map((item) => Text(
+                    item,
+                    style: Theme.of(context).textTheme.bodyLarge,
+                  ))
+              .toList(),
+        ),
+      ],
     );
   }
 }
