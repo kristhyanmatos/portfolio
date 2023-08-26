@@ -15,7 +15,7 @@ class ExperiencesWidget extends StatelessWidget {
         children: const [
           CompanyWidget(
             name: 'Datalise Tecnologia da Informação LTDA',
-            logo: 'experiences/datalise.svg',
+            logo: 'assets/experiences/datalise.svg',
           ),
           SizedBox(height: 32),
           ExperienceWidget(
