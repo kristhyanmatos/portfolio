@@ -13,7 +13,7 @@ class BodyWebWidget extends StatefulWidget {
 }
 
 class _BodyWebWidgetState extends State<BodyWebWidget> {
-  int index = 2;
+  int index = 0;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,7 +24,7 @@ class _BodyWebWidgetState extends State<BodyWebWidget> {
           Row(
             children: [
               ChoiceChip(
-                label: const Text('Projetos'),
+                label: const Text('Experiências'),
                 selected: index == 0,
                 onSelected: (value) => setState(() {
                   index = 0;
@@ -32,7 +32,7 @@ class _BodyWebWidgetState extends State<BodyWebWidget> {
               ),
               const SizedBox(width: 12),
               ChoiceChip(
-                label: const Text('Experiências'),
+                label: const Text('Projetos'),
                 selected: index == 1,
                 onSelected: (value) => setState(() {
                   index = 1;
@@ -62,8 +62,8 @@ class _BodyWebWidgetState extends State<BodyWebWidget> {
             child: ListView(
               shrinkWrap: true,
               children: [
-                if (index == 0) const ProjectsWidget(),
-                if (index == 1) const ExperiencesWidget(),
+                if (index == 0) const ExperiencesWidget(),
+                if (index == 1) const ProjectsWidget(),
                 if (index == 2) const SkillsWidget(),
                 if (index == 3) const EducationWidget(),
               ],

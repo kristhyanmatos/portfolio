@@ -49,7 +49,7 @@ class ProjectWidget extends StatelessWidget {
         ),
         Text(
           develop,
-          style: Theme.of(context).textTheme.bodyMedium,
+          style: Theme.of(context).textTheme.bodyLarge,
           textAlign: TextAlign.justify,
         ),
       ],

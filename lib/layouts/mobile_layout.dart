@@ -41,8 +41,8 @@ class _MobileLayoutState extends State<MobileLayout> {
                   shrinkWrap: true,
                   children: [
                     if (index == 0) const AboutWidget(),
-                    if (index == 1) const ProjectsWidget(),
-                    if (index == 2) const ExperiencesWidget(),
+                    if (index == 1) const ExperiencesWidget(),
+                    if (index == 2) const ProjectsWidget(),
                     if (index == 3) const SkillsWidget(),
                     if (index == 4) const EducationWidget(),
                   ],
@@ -67,13 +67,13 @@ class _MobileLayoutState extends State<MobileLayout> {
           ),
           BottomNavigationBarItem(
             icon:
-                Icon(Icons.build, color: Theme.of(context).colorScheme.primary),
-            label: 'Projetos',
+                Icon(Icons.work, color: Theme.of(context).colorScheme.primary),
+            label: 'Experiências',
           ),
           BottomNavigationBarItem(
             icon:
-                Icon(Icons.work, color: Theme.of(context).colorScheme.primary),
-            label: 'Experiências',
+                Icon(Icons.build, color: Theme.of(context).colorScheme.primary),
+            label: 'Projetos',
           ),
           BottomNavigationBarItem(
             icon:

@@ -33,7 +33,7 @@ class ExperienceWidget extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         Text(
-          '$inicio - $fim',
+          '$inicio $fim',
           style: Theme.of(context).textTheme.bodyMedium,
           textAlign: TextAlign.justify,
         ),
