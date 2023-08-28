@@ -1,7 +1,16 @@
+// ignore_for_file: avoid_web_libraries_in_flutter
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
+import 'dart:js' as js;
 import 'carrossel_widget.dart';
+
+class Tag {
+  final String name;
+  final String link;
+
+  Tag(this.name, this.link);
+}
 
 class ProjectWidget extends StatelessWidget {
   final String title;
@@ -9,6 +18,7 @@ class ProjectWidget extends StatelessWidget {
   final List<String> urlsIcons;
   final String develop;
   final List<String> urlsImages;
+  final List<Tag> tags;
   const ProjectWidget({
     super.key,
     required this.title,
@@ -16,6 +26,7 @@ class ProjectWidget extends StatelessWidget {
     required this.urlsIcons,
     required this.develop,
     required this.urlsImages,
+    required this.tags,
   });
 
   @override
@@ -27,6 +38,25 @@ class ProjectWidget extends StatelessWidget {
           title,
           style: Theme.of(context).textTheme.titleLarge,
         ),
+        const SizedBox(height: 8),
+        SizedBox(
+          height: 30,
+          child: ListView.separated(
+            shrinkWrap: true,
+            scrollDirection: Axis.horizontal,
+            itemCount: tags.length,
+            itemBuilder: (context, index) => ActionChip.elevated(
+              visualDensity: VisualDensity.compact,
+              label: Text(tags[index].name),
+              onPressed: () => js.context.callMethod(
+                'open',
+                [tags[index].link],
+              ),
+            ),
+            separatorBuilder: (context, index) => const SizedBox(width: 12),
+          ),
+        ),
+        const SizedBox(height: 8),
         Text(
           subtitle,
           style: Theme.of(context).textTheme.bodyLarge,

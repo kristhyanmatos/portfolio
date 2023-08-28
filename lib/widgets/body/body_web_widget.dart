@@ -13,7 +13,7 @@ class BodyWebWidget extends StatefulWidget {
 }
 
 class _BodyWebWidgetState extends State<BodyWebWidget> {
-  int index = 0;
+  int index = 1;
   @override
   Widget build(BuildContext context) {
     return Padding(
