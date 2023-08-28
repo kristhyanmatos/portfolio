@@ -88,12 +88,18 @@ class AboutWidget extends StatelessWidget {
           ),
           Column(
             children: [
-              Text(
-                'Repositório no GitHub',
-                style: Theme.of(context).textTheme.labelMedium,
+              InkWell(
+                onTap: () => js.context.callMethod(
+                  'open',
+                  ['https://github.com/kristhyanmatos/portfolio'],
+                ),
+                child: Text(
+                  'Repositório no GitHub',
+                  style: Theme.of(context).textTheme.labelMedium,
+                ),
               ),
               Text(
-                ' Portfólio -  Kristhyan Matos @ 2023',
+                ' Portfólio -  Kristhyan de Matos Maia @ 2023',
                 style: Theme.of(context).textTheme.labelMedium,
               )
             ],
