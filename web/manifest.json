@@ -1,11 +1,11 @@
 {
-    "name": "kristhyan de Matos Maia",
-    "short_name": "Kristhyan de Matos Maia",
+    "name": "portfolio",
+    "short_name": "portfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Kristhyan de Matos Maia",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

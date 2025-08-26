@@ -17,33 +17,40 @@ class ExperienceWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          title,
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.w600,
-              ),
+    return Card.outlined(
+      color: Colors.transparent,
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w600,
+                  ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              subtitle,
+              style: Theme.of(context).textTheme.bodyLarge,
+              textAlign: TextAlign.justify,
+            ),
+            const SizedBox(height: 12),
+            Text(
+              '$inicio $fim',
+              style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.justify,
+            ),
+            const SizedBox(height: 12),
+            Text(
+              develop,
+              style: Theme.of(context).textTheme.bodyLarge,
+              textAlign: TextAlign.justify,
+            ),
+          ],
         ),
-        Text(
-          subtitle,
-          style: Theme.of(context).textTheme.bodyLarge,
-          textAlign: TextAlign.justify,
-        ),
-        const SizedBox(height: 12),
-        Text(
-          '$inicio $fim',
-          style: Theme.of(context).textTheme.bodyMedium,
-          textAlign: TextAlign.justify,
-        ),
-        const SizedBox(height: 12),
-        Text(
-          develop,
-          style: Theme.of(context).textTheme.bodyLarge,
-          textAlign: TextAlign.justify,
-        ),
-      ],
+      ),
     );
   }
 }

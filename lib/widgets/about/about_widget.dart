@@ -24,8 +24,8 @@ class AboutWidget extends StatelessWidget {
               const ProfilePhotoWidget(),
               const SizedBox(height: 12),
               Text(
-                "Engenheiro da Computação",
-                style: Theme.of(context).textTheme.titleMedium,
+                "Kristhyan de Matos Maia",
+                style: Theme.of(context).textTheme.titleLarge,
               ),
             ],
           ),
@@ -33,14 +33,7 @@ class AboutWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Kristhyan de Matos Maia",
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.w600,
-                    ),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                'Tenho me dedicado a produzir softwares de alto desempenho, mantendo um ambiente de trabalho saudável e valorizando a manutenção do código. Busco constantemente implementar metodologias, conceitos, estruturas e arquiteturas que contribuam para o sucesso dos projetos. Além disso, acredito que estabelecer responsabilidades, respeito e metas claras é fundamental para o crescimento profissional e empresarial.',
+                'Formado em Engenharia da Computação pela Universidade Federal do Sul e Sudeste do Pará [UNIFESSPA], tenho me dedicado a produzir softwares de alto desempenho, mantendo um ambiente de trabalho saudável e valorizando a manutenção do código. Busco constantemente implementar metodologias, conceitos, estruturas e arquiteturas que contribuam para o sucesso dos projetos. Além disso, acredito que estabelecer responsabilidades, respeito e metas claras é fundamental para o crescimento profissional e empresarial.',
                 style: Theme.of(context).textTheme.bodyLarge,
                 textAlign: TextAlign.justify,
                 overflow: TextOverflow.ellipsis,
