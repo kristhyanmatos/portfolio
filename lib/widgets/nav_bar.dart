@@ -83,7 +83,6 @@ class NavBar extends StatelessWidget {
   }
 }
 
-/// A foto só entra na barra depois que o herói sai de cena.
 class _NavAvatar extends StatelessWidget {
   const _NavAvatar({required this.visible, required this.onTap});
 
@@ -124,23 +123,11 @@ class _NavAvatar extends StatelessWidget {
                     ],
                   ),
                   child: ClipOval(
-                    child: Image.network(
+                    child: Image.asset(
                       Profile.avatar,
                       fit: BoxFit.cover,
                       semanticLabel: 'Foto de ${Profile.name}',
-                      errorBuilder: (context, error, stackTrace) => ColoredBox(
-                        color: Dusk.plum,
-                        child: Center(
-                          child: Text(
-                            'KM',
-                            style: DuskType.heading(
-                              size: 14,
-                              color: Dusk.cream,
-                              height: 1,
-                            ),
-                          ),
-                        ),
-                      ),
+                      filterQuality: FilterQuality.medium,
                     ),
                   ),
                 ),

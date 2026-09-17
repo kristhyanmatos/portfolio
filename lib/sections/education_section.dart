@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../core/responsive.dart';
 import '../core/theme.dart';
 import '../data/profile.dart';
+import '../widgets/asset_picture.dart';
 import '../widgets/dusk_card.dart';
 import '../widgets/section.dart';
 
@@ -19,7 +19,11 @@ class EducationSection extends StatelessWidget {
         color: Dusk.cream,
         borderRadius: BorderRadius.circular(16),
       ),
-      child: SvgPicture.asset(Formacao.logo, height: compact ? 48 : 60),
+      child: AssetPicture(
+        Formacao.logo,
+        height: compact ? 48 : 60,
+        semanticLabel: Formacao.instituicao,
+      ),
     );
     final details = Column(
       crossAxisAlignment: CrossAxisAlignment.start,

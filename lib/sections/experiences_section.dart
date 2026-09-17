@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../core/responsive.dart';
 import '../core/theme.dart';
 import '../data/experiences.dart';
 import '../data/models.dart';
 import '../data/period.dart';
+import '../widgets/asset_picture.dart';
 import '../widgets/dusk_card.dart';
 import '../widgets/section.dart';
 import '../widgets/tag_chip.dart';
@@ -162,7 +162,11 @@ class _CompanyHeader extends StatelessWidget {
               color: Dusk.cream,
               borderRadius: BorderRadius.circular(12),
             ),
-            child: SvgPicture.asset(logo, height: company.logoHeight),
+            child: AssetPicture(
+              logo,
+              height: company.logoHeight,
+              semanticLabel: company.name,
+            ),
           ),
           const SizedBox(width: 14),
         ],

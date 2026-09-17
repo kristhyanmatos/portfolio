@@ -17,9 +17,6 @@ abstract final class Dusk {
 }
 
 abstract final class DuskType {
-  /// Desligado nos testes, que não têm acesso à rede para baixar as fontes.
-  static bool useGoogleFonts = true;
-
   /// Fira Code e Share Tech Mono são monoespacadas: avanço fixo e mais largo
   /// por glifo, e x-height bem maior que o das proporcionais que ocupavam
   /// esses papéis antes (Fraunces e Caveat). No mesmo fontSize elas renderizam
@@ -48,7 +45,7 @@ abstract final class DuskType {
       height: height,
       shadows: shadows,
     );
-    return useGoogleFonts ? GoogleFonts.firaCode(textStyle: style) : style;
+    return GoogleFonts.firaCode(textStyle: style);
   }
 
   /// A voz do site, em Share Tech Mono — terminal de filme.
@@ -64,7 +61,7 @@ abstract final class DuskType {
       height: 1.3,
       letterSpacing: scaled * 0.02,
     );
-    return useGoogleFonts ? GoogleFonts.shareTechMono(textStyle: style) : style;
+    return GoogleFonts.shareTechMono(textStyle: style);
   }
 
   /// Corpo de texto, em Nunito: a proporcional que segura a leitura longa.
@@ -86,7 +83,7 @@ abstract final class DuskType {
       letterSpacing: letterSpacing,
       shadows: shadows,
     );
-    return useGoogleFonts ? GoogleFonts.nunito(textStyle: style) : style;
+    return GoogleFonts.nunito(textStyle: style);
   }
 }
 
@@ -108,9 +105,7 @@ ThemeData buildDuskTheme() {
     scaffoldBackgroundColor: Dusk.night,
     splashFactory: InkSparkle.splashFactory,
   );
-  final textTheme = DuskType.useGoogleFonts
-      ? GoogleFonts.nunitoTextTheme(base.textTheme)
-      : base.textTheme;
+  final textTheme = GoogleFonts.nunitoTextTheme(base.textTheme);
   final buttonText = DuskType.body(size: 15.5, weight: FontWeight.w700);
 
   return base.copyWith(

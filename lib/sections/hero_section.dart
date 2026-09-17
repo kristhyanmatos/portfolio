@@ -193,16 +193,11 @@ class _ProfilePhoto extends StatelessWidget {
         ],
       ),
       child: ClipOval(
-        child: Image.network(
+        child: Image.asset(
           Profile.avatar,
           fit: BoxFit.cover,
           semanticLabel: 'Foto de ${Profile.name}',
-          errorBuilder: (context, error, stackTrace) => ColoredBox(
-            color: Dusk.plum,
-            child: Center(
-              child: Text('KM', style: DuskType.heading(size: size * 0.32)),
-            ),
-          ),
+          filterQuality: FilterQuality.medium,
         ),
       ),
     );

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../core/theme.dart';
 import '../data/models.dart';
+import 'asset_picture.dart';
 
 const _palettes = [
   [Color(0xFF5B2A5E), Color(0xFFE0735F)],
@@ -183,7 +183,7 @@ class _Phones extends StatelessWidget {
                   child: SizedBox(
                     height: height * (i == 1 ? 1 : 0.9),
                     width: height * 0.5 * (i == 1 ? 1 : 0.9),
-                    child: SvgPicture.asset(screen, fit: BoxFit.contain),
+                    child: AssetPicture(screen, fit: BoxFit.contain),
                   ),
                 ),
               ),

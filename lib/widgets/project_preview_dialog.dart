@@ -1,10 +1,10 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../core/theme.dart';
 import '../data/models.dart';
+import 'asset_picture.dart';
 
 Future<void> showProjectPreview(BuildContext context, Project project) {
   return showDialog<void>(
@@ -80,9 +80,7 @@ class _ProjectPreviewDialogState extends State<_ProjectPreviewDialog> {
                       child: Center(
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(12),
-                          child: image.endsWith('.svg')
-                              ? SvgPicture.asset(image, fit: BoxFit.contain)
-                              : Image.asset(image, fit: BoxFit.contain),
+                          child: AssetPicture(image, fit: BoxFit.contain),
                         ),
                       ),
                     ),

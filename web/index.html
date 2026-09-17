@@ -1,38 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfólio de Kristhyan de Matos Maia — Engenheiro da Computação, desenvolvedor Full Stack, Mobile e de Infraestrutura.">
-  <meta name="theme-color" content="#2A1745">
 
-  <!-- iOS meta tags & icons -->
+  <title>Kristhyan de Matos Maia — Engenheiro da Computação | Full Stack, Mobile e Infraestrutura</title>
+  <meta name="description" content="Portfólio de Kristhyan de Matos Maia, Engenheiro da Computação. Projetos e experiência em Flutter, Golang, TypeScript, Next.js, Kotlin, PostgreSQL e infraestrutura — do servidor físico ao app na mão do usuário.">
+  <meta name="author" content="Kristhyan de Matos Maia">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://www.kristhyan.com/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Kristhyan de Matos Maia">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.kristhyan.com/">
+  <meta property="og:title" content="Kristhyan de Matos Maia — Engenheiro da Computação">
+  <meta property="og:description" content="Full Stack, Mobile e Infraestrutura. Projetos e experiência em Flutter, Golang, TypeScript, Next.js, Kotlin e PostgreSQL.">
+  <meta property="og:image" content="https://www.kristhyan.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kristhyan de Matos Maia, Engenheiro da Computação">
+  <meta property="profile:first_name" content="Kristhyan">
+  <meta property="profile:last_name" content="de Matos Maia">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kristhyan de Matos Maia — Engenheiro da Computação">
+  <meta name="twitter:description" content="Full Stack, Mobile e Infraestrutura. Projetos e experiência em Flutter, Golang, TypeScript, Next.js, Kotlin e PostgreSQL.">
+  <meta name="twitter:image" content="https://www.kristhyan.com/og-image.jpg">
+
+  <meta name="theme-color" content="#2A1745">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Kristhyan">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>Kristhyan de Matos Maia</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="manifest" href="manifest.json">
+
+  <link rel="preload" as="fetch" href="assets/assets/fonts/Nunito-Regular.ttf" crossorigin>
+  <link rel="preload" as="fetch" href="assets/assets/fonts/FiraCode-SemiBold.ttf" crossorigin>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://www.kristhyan.com/#kristhyan",
+        "name": "Kristhyan de Matos Maia",
+        "givenName": "Kristhyan",
+        "familyName": "de Matos Maia",
+        "url": "https://www.kristhyan.com/",
+        "image": "https://www.kristhyan.com/og-image.jpg",
+        "jobTitle": "Engenheiro da Computação",
+        "description": "Engenheiro da Computação com atuação em desenvolvimento Full Stack, Mobile e Infraestrutura.",
+        "knowsLanguage": ["pt-BR", "en"],
+        "knowsAbout": [
+          "Flutter", "Dart", "Golang", "TypeScript", "Next.js", "NestJS",
+          "Kotlin", "Python", "PostgreSQL", "MongoDB", "Docker",
+          "Clean Architecture", "SOLID"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade Federal do Sul e Sudeste do Pará — UNIFESSPA"
+        },
+        "sameAs": [
+          "https://github.com/kristhyanmatos",
+          "https://www.linkedin.com/in/kristhyan-de-matos-maia/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.kristhyan.com/#site",
+        "url": "https://www.kristhyan.com/",
+        "name": "Kristhyan de Matos Maia",
+        "inLanguage": "pt-BR",
+        "about": { "@id": "https://www.kristhyan.com/#kristhyan" },
+        "publisher": { "@id": "https://www.kristhyan.com/#kristhyan" }
+      }
+    ]
+  }
+  </script>
 
   <style>
     html, body {
@@ -52,9 +101,73 @@
       text-shadow: 0 2px 16px rgba(20, 10, 24, 0.6);
       transition: opacity 0.4s ease;
     }
+    #seo {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
   </style>
+  <noscript>
+    <style>
+      #loading { display: none; }
+      #seo {
+        position: static;
+        width: auto;
+        height: auto;
+        clip: auto;
+        clip-path: none;
+        white-space: normal;
+        max-width: 44rem;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+        color: #FFF3E3;
+        font: 400 17px/1.6 system-ui, -apple-system, Segoe UI, sans-serif;
+      }
+      #seo a { color: #FFD68A; }
+    </style>
+  </noscript>
 </head>
 <body>
+  <div id="seo">
+    <h1>Kristhyan de Matos Maia</h1>
+    <p>Engenheiro da Computação · Full Stack, Mobile e Infraestrutura</p>
+    <p>Do servidor físico ao app na mão do usuário: construo, lidero e mantenho software que as pessoas usam de verdade.</p>
+
+    <h2>Sobre</h2>
+    <p>Formado em Engenharia da Computação pela Universidade Federal do Sul e Sudeste do Pará (UNIFESSPA), tenho me dedicado a produzir softwares de alto desempenho, mantendo um ambiente de trabalho saudável e valorizando a manutenção do código.</p>
+
+    <h2>Experiências</h2>
+    <ul>
+      <li>Desenvolvedor de Aplicativos — Mobato (desde dez/2023): manutenção e novas funcionalidades do aplicativo Mobato em Kotlin e Java.</li>
+      <li>Líder Técnico — Laboratório de Contas Regionais da Amazônia (Lacam), UNIFESSPA (desde jun/2022).</li>
+      <li>Desenvolvimento Mobile — Datalise Tecnologia da Informação (set/2021 a nov/2023): aplicação Flutter de análise de performance de concessionárias.</li>
+      <li>Desenvolvedor Full Stack — Bits Jr Soluções em TI (mar/2019 a jul/2020).</li>
+    </ul>
+
+    <h2>Projetos</h2>
+    <ul>
+      <li>TacTov — plataforma de gestão de eventos de airsoft.</li>
+      <li>Presença — controle de presença acadêmica.</li>
+      <li>NF Dashboard — painel de notas fiscais.</li>
+      <li>FNF — aplicação web do Lacam.</li>
+      <li>Sedres, Servidor Lacam e demais projetos de dados e infraestrutura.</li>
+    </ul>
+
+    <h2>Habilidades</h2>
+    <p>Flutter e Dart, Golang, TypeScript, Next.js, NestJS, Kotlin, Python, PostgreSQL, MongoDB, Docker, Clean Architecture, Clean Code, SOLID e versionamento de código.</p>
+
+    <h2>Contato</h2>
+    <ul>
+      <li><a href="https://github.com/kristhyanmatos" rel="me">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/kristhyan-de-matos-maia/" rel="me">LinkedIn</a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=5591985398664">WhatsApp</a></li>
+    </ul>
+  </div>
+
   <div id="loading">afinando o violão…</div>
   <script>
     window.addEventListener('flutter-first-frame', function () {

@@ -28,8 +28,10 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/fonts/
+    - assets/avatar.webp
     - assets/noise.png
-    - assets/unifesspa.svg
+    - assets/unifesspa.webp
     - assets/experiences/
     - assets/icons/
     - assets/projects/

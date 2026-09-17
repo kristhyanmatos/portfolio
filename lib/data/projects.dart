@@ -11,7 +11,7 @@ const projects = <Project>[
     description: 'A plataforma definitiva para quem joga e organiza Airsoft no Brasil. Organize qualquer tipo de evento de Airsoft ou participe deles, com ranking por agente, equipes e organizadores, criação de equipes com patentes e descrição, pagamentos automatizados, gerenciamento de múltiplos eventos, campeonatos, mensagens, grupos de mensagens, perfil de conquistas e muito mais. Disponível na web e no mobile, para Android e iOS.',
     stack: ['Flutter', 'Next.js', 'Golang', 'PostgreSQL'],
     categories: {ProjectCategory.web, ProjectCategory.mobile},
-    cover: ScreenshotCover('assets/projects/tactov.jpeg', domain: 'tactov.com'),
+    cover: ScreenshotCover('assets/projects/tactov.webp', domain: 'tactov.com'),
     links: [ProjectLink('Acessar', 'https://www.tactov.com/')],
   ),
   Project(
@@ -23,7 +23,7 @@ const projects = <Project>[
     cover: PosterCover(
       icon: Icons.account_balance_outlined,
       caption: 'da chamada ao certificado',
-      logo: 'assets/projects/sep_logo.png',
+      logo: 'assets/projects/sep_logo.webp',
     ),
     links: [ProjectLink('Acessar', 'https://www.sep.org.br/')],
   ),
@@ -35,7 +35,7 @@ const projects = <Project>[
     stack: ['Next.js', 'Golang', 'PostgreSQL'],
     categories: {ProjectCategory.web},
     cover: ScreenshotCover(
-      'assets/projects/presenca.jpeg',
+      'assets/projects/presenca.webp',
       domain: 'apps-lacam.unifesspa.edu.br/presenca',
     ),
     links: [
@@ -50,7 +50,7 @@ const projects = <Project>[
     stack: ['Next.js', 'Golang', 'Recharts'],
     categories: {ProjectCategory.web, ProjectCategory.dados},
     cover: ScreenshotCover(
-      'assets/projects/nf_dashboard.jpeg',
+      'assets/projects/nf_dashboard.webp',
       domain: 'apps-lacam.unifesspa.edu.br/nf-dashboard',
     ),
     links: [
@@ -68,7 +68,7 @@ const projects = <Project>[
     stack: ['Next.js', 'NestJS', 'MongoDB'],
     categories: {ProjectCategory.web, ProjectCategory.dados},
     cover: ScreenshotCover(
-      'assets/projects/fnf.jpeg',
+      'assets/projects/fnf.webp',
       domain: 'apps-lacam.unifesspa.edu.br/fnf',
     ),
     links: [ProjectLink('Acessar', 'https://apps-lacam.unifesspa.edu.br/fnf')],
@@ -80,7 +80,7 @@ const projects = <Project>[
     stack: ['Vite', 'React', 'TypeScript'],
     categories: {ProjectCategory.web},
     cover: ScreenshotCover(
-      'assets/projects/sedres.jpeg',
+      'assets/projects/sedres.webp',
       domain: 'viiisedres.org',
     ),
     links: [ProjectLink('Acessar', 'https://www.viiisedres.org/')],
@@ -92,7 +92,7 @@ const projects = <Project>[
     stack: ['Docker', 'GitHub Actions', 'RAID'],
     categories: {ProjectCategory.infra},
     cover: ScreenshotCover(
-      'assets/projects/servidor_lacam.jpeg',
+      'assets/projects/servidor_lacam.webp',
       domain: 'apps-lacam.unifesspa.edu.br',
     ),
     links: [ProjectLink('Acessar', 'https://apps-lacam.unifesspa.edu.br')],
@@ -122,7 +122,7 @@ const projects = <Project>[
     stack: ['Vite', 'TypeScript'],
     categories: {ProjectCategory.web},
     cover: ScreenshotCover(
-      'assets/projects/casamento.jpeg',
+      'assets/projects/casamento.webp',
       domain: 'nathalya.kristhyan.com',
     ),
     links: [ProjectLink('Acessar', 'https://nathalya.kristhyan.com/')],
@@ -134,9 +134,9 @@ const projects = <Project>[
     stack: ['Flutter', 'Firebase', 'Node.js', 'Python', 'PostgreSQL', 'AWS'],
     categories: {ProjectCategory.mobile},
     cover: PhonesCover([
-      'assets/projects/datalise_1.svg',
-      'assets/projects/datalise_2.svg',
-      'assets/projects/datalise_3.svg',
+      'assets/projects/datalise_1.webp',
+      'assets/projects/datalise_2.webp',
+      'assets/projects/datalise_3.webp',
     ]),
     links: [
       ProjectLink(
@@ -157,9 +157,9 @@ const projects = <Project>[
     stack: ['Flutter', 'Firebase', 'Node.js'],
     categories: {ProjectCategory.mobile},
     cover: PhonesCover([
-      'assets/projects/leva_almondes_1.svg',
-      'assets/projects/leva_almondes_2.svg',
-      'assets/projects/leva_almondes_3.svg',
+      'assets/projects/leva_almondes_1.webp',
+      'assets/projects/leva_almondes_2.webp',
+      'assets/projects/leva_almondes_3.webp',
     ]),
     links: [
       ProjectLink(
@@ -175,9 +175,9 @@ const projects = <Project>[
     stack: ['Flutter', 'OpenAI'],
     categories: {ProjectCategory.mobile},
     cover: PhonesCover([
-      'assets/projects/namoral_1.svg',
-      'assets/projects/namoral_2.svg',
-      'assets/projects/namoral_3.svg',
+      'assets/projects/namoral_1.webp',
+      'assets/projects/namoral_2.webp',
+      'assets/projects/namoral_3.webp',
     ]),
     links: [
       ProjectLink(

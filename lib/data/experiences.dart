@@ -4,6 +4,7 @@ final companies = <Company>[
   Company(
     name: 'Mobato',
     shortName: 'Mobato',
+    logo: 'assets/experiences/logo-mobato.webp',
     roles: [
       Role(
         title: 'Desenvolvedor de Aplicativos',
@@ -33,6 +34,7 @@ final companies = <Company>[
   Company(
     name: 'Laboratório de Contas Regionais da Amazônia [Lacam]',
     shortName: 'Lacam',
+    logo: 'assets/experiences/logo-lacam.webp',
     detail: 'Universidade Federal do Sul e Sudeste do Pará [UNIFESSPA]',
     roles: [
       Role(
@@ -131,7 +133,7 @@ final companies = <Company>[
   Company(
     name: 'Bits Jr - Soluções em TI',
     shortName: 'Bits Jr',
-    logo: 'assets/experiences/logo-bitsjr.svg',
+    logo: 'assets/experiences/logo-bitsjr.webp',
     logoHeight: 34,
     roles: [
       Role(

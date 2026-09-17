@@ -2,15 +2,15 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/app_widget.dart';
-import 'package:portfolio/core/theme.dart';
 import 'package:portfolio/data/experiences.dart';
 import 'package:portfolio/data/profile.dart';
 import 'package:portfolio/data/projects.dart';
 import 'package:portfolio/widgets/section.dart';
 
 void main() {
-  setUpAll(() => DuskType.useGoogleFonts = false);
+  setUpAll(() => GoogleFonts.config.allowRuntimeFetching = false);
 
   test('todos os arquivos referenciados existem', () {
     final assets = {

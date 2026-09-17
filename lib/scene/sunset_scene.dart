@@ -61,11 +61,17 @@ class _SunsetSceneState extends State<SunsetScene>
             painter: SunsetScenePainter(time: _time, progress: widget.progress),
           ),
           // Granulado de filme por cima de tudo.
-          Image.asset(
-            'assets/noise.png',
-            fit: BoxFit.cover,
-            opacity: const AlwaysStoppedAnimation(0.05),
-            excludeFromSemantics: true,
+          const Opacity(
+            opacity: 0.05,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/noise.png'),
+                  repeat: ImageRepeat.repeat,
+                  filterQuality: FilterQuality.none,
+                ),
+              ),
+            ),
           ),
         ],
       ),

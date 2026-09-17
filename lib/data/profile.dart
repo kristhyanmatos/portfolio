@@ -4,7 +4,8 @@ abstract final class Profile {
       'Engenheiro da Computação · Full Stack, Mobile e Infraestrutura';
   static const tagline =
       'Do servidor físico ao app na mão do usuário: construo, lidero e mantenho software que as pessoas usam de verdade.';
-  static const avatar = 'https://avatars.githubusercontent.com/u/44785539?v=4';
+  static const avatar = 'assets/avatar.webp';
+  static const site = 'https://www.kristhyan.com';
   static const about =
       'Formado em Engenharia da Computação pela Universidade Federal do Sul e Sudeste do Pará [UNIFESSPA], tenho me dedicado a produzir softwares de alto desempenho, mantendo um ambiente de trabalho saudável e valorizando a manutenção do código. Busco constantemente implementar metodologias, conceitos, estruturas e arquiteturas que contribuam para o sucesso dos projetos. Além disso, acredito que estabelecer responsabilidades, respeito e metas claras é fundamental para o crescimento profissional e empresarial.';
 
@@ -51,5 +52,5 @@ abstract final class Formacao {
   static const conclusao = 2022;
   static const instituicao =
       'Universidade Federal do Sul e Sudeste do Pará — UNIFESSPA';
-  static const logo = 'assets/unifesspa.svg';
+  static const logo = 'assets/unifesspa.webp';
 }
