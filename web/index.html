@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -18,12 +18,14 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Kristhyan de Matos Maia — Engenheiro da Computação, desenvolvedor Full Stack, Mobile e de Infraestrutura.">
+  <meta name="theme-color" content="#2A1745">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="portfolio">
+  <meta name="apple-mobile-web-app-title" content="Kristhyan">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -31,8 +33,35 @@
 
   <title>Kristhyan de Matos Maia</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: linear-gradient(180deg, #2A1745 0%, #6B3270 38%, #D65F6B 66%, #F49856 86%, #FFD28A 100%);
+    }
+    #loading {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: 400 18px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: #FFF3E3;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 16px rgba(20, 10, 24, 0.6);
+      transition: opacity 0.4s ease;
+    }
+  </style>
 </head>
 <body>
+  <div id="loading">afinando o violão…</div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var loading = document.getElementById('loading');
+      if (loading) loading.remove();
+    });
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

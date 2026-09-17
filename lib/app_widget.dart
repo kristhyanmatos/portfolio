@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'portfolio.dart';
+
+import 'core/theme.dart';
+import 'portfolio_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -8,11 +10,8 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Kristhyan de Matos Maia',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: buildDuskTheme(),
       home: const PortfolioPage(),
     );
   }
