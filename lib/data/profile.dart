@@ -12,7 +12,6 @@ abstract final class Profile {
   static const github = 'https://github.com/kristhyanmatos';
   static const linkedin =
       'https://www.linkedin.com/in/kristhyan-de-matos-maia/';
-  static const whatsapp = 'https://api.whatsapp.com/send?phone=5591985398664';
   static const repository = 'https://github.com/kristhyanmatos/portfolio';
 }
 

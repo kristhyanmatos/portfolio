@@ -153,7 +153,7 @@ class _HeroContent extends StatelessWidget {
               label: const Text('Ver projetos'),
             ),
             OutlinedButton.icon(
-              onPressed: () => openLink(Profile.whatsapp),
+              onPressed: () => openLink(Profile.linkedin),
               style: OutlinedButton.styleFrom(
                 backgroundColor: const Color(0x4D150E1B),
               ),

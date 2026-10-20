@@ -35,7 +35,6 @@ class SocialLinks extends StatelessWidget {
   static const _links = [
     ('github', 'GitHub', Profile.github),
     ('linkedin', 'LinkedIn', Profile.linkedin),
-    ('whatsapp', 'WhatsApp', Profile.whatsapp),
   ];
 
   @override
